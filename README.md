@@ -7,17 +7,18 @@ DemoVir will classify viral contigs to the Order or Family taxonomic level by co
 
 DemoVir expects as input a multi fasta file of amino acid sequences where the sequence headers are contigid_geneid, such as in the output produced by prodigal (e.g. NODE_1_length_100_cov_25_1, NODE_1_length_100_cov_25_2, NODE_1_length_100_cov_25_3).
 
-##INSTALLATION
+## INSTALLATION
 
-###PREREQUISITES:
+### PREREQUISITES:
 
 -R
+
 -Usearch
 
 Usearch 32 bit is available for free from
 http://www.drive5.com/more.html
 
-###DATABASE:
+### DATABASE:
 The viral subset of the TrEMBL database is available from
 http://www.uniprot.org/uniprot/?query=reviewed:no+taxonomy:10239
 Download -> FASTA (canonical) compressed. 
