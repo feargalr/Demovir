@@ -15,7 +15,7 @@ DemoVir expects as input a multi fasta file of amino acid sequences where the se
 
 -Usearch
 
--pullseq
+-PullSeq
 
 Usearch 32 bit is available for free from
 
