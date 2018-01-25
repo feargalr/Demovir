@@ -15,8 +15,15 @@ DemoVir expects as input a multi fasta file of amino acid sequences where the se
 
 -Usearch
 
+-pullseq
+
 Usearch 32 bit is available for free from
+
 http://www.drive5.com/more.html
+
+PullSeq is available from
+
+https://github.com/bcthomas/pullseq
 
 ### DATABASE:
 The viral subset of the TrEMBL database is available from
