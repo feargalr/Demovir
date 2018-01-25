@@ -1,5 +1,5 @@
 # Demovir
-# -----UNDER CONTSTRUCTION----- # 
+# -----UNDER CONSTRUCTION----- # 
 Taxonomic classification of viral contigs to Order and Family level
 
 When performing metagenomic sequencing of Viral-Like Particle (VLP) captures the majority of returned sequences often bare little to no homology to reference sequences. Frequently it may be useful to know which viral taxonomic group these novel viruses are likely to belong to as this will give information about nucleic acid type, size and behaviour.
