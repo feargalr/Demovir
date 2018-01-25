@@ -30,7 +30,11 @@ To format the database for use with DemoVir simply execute the following in the 
 format.sh 
 ```
 
-## Classifying contigs
-DemoVir expects a multi fasta
 
+
+## Classifying contigs
+DemoVir expects a multi fasta 
+
+```
+demovir.sh input.fasta evalue threads
 ```
