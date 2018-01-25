@@ -32,10 +32,10 @@ http://www.uniprot.org/uniprot/?query=reviewed:no+taxonomy:10239
 Download -> FASTA (canonical) compressed. 
 
 
-To format the database for use with DemoVir simply execute the following in the directory where you have place the above file
+To format the database for use with DemoVir simply execute the following in the directory where you have placed the above downloaded zipped fasta file
 
 ```
-format.sh 
+/path_to_demovir/format.sh 
 ```
 
 
@@ -46,3 +46,5 @@ DemoVir expects as input a multi fasta file of amino acid sequences where the se
 ```
 /path_to_demovir/demovir.sh input.fasta evalue threads
 ```
+
+The output is a tab delimited text file containing 5 columns. The first being the contig ID, the second the Order classification, the third the percentage of the vote this classification got, then the 4th and 5th are the same for Family. Demovir assigns the classification simply by which ever taxa was most prevalant, it does not require a certain threshold to be crossed, or for one taxa to reach a majority (i.e. >50%).
