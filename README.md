@@ -41,8 +41,8 @@ format.sh
 
 
 ## Classifying contigs
-DemoVir expects a multi fasta 
+DemoVir expects as input a multi fasta file of amino acid sequences where the sequence headers are contigid_geneid, such as in the output produced by prodigal (e.g. NODE_1_length_100_cov_25_1, NODE_1_length_100_cov_25_2, NODE_1_length_100_cov_25_3).
 
 ```
-demovir.sh input.fasta evalue threads
+/path_to_demovir/demovir.sh input.fasta evalue threads
 ```
