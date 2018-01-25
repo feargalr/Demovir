@@ -10,8 +10,9 @@ DemoVir expects as input a multi fasta file of amino acid sequences where the se
 ##INSTALLATION
 
 ###PREREQUISITES:
-R
-Usearch
+
+-R
+-Usearch
 
 Usearch 32 bit is available for free from
 http://www.drive5.com/more.html
@@ -26,4 +27,9 @@ To format the database for use with DemoVir simply execute the following in the 
 
 ```
 format.sh 
+```
+
+## Classifying contigs
+DemoVir expects a multi fasta
+
 ```
