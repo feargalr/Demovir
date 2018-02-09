@@ -16,20 +16,18 @@ DemoVir expects as input a multi fasta file of amino acid sequences where the se
 
 -Usearch
 
--PullSeq
+-bzip2
 
 Usearch 32 bit is available for free from
 
 http://www.drive5.com/more.html
 
-PullSeq is available from
-
-https://github.com/bcthomas/pullseq
-
 ### DATABASE:
-The viral subset of the TrEMBL database is available from
-http://www.uniprot.org/uniprot/?query=reviewed:no+taxonomy:10239
-Download -> FASTA (canonical) compressed. 
+The viral subset of the TrEMBL database is available from UniProt, but will require some additional formatting for use with DemoVir. In the future we hope to make a method to automate this process.
+
+Alternatively we have a made a version with redundant to 95% identity for increased speed with little to no loss in classificationa availability which is available at:
+
+https://figshare.com/articles/NR_Viral_TrEMBL/5822166
 
 
 To format the database for use with DemoVir simply execute the following in the directory where you have placed the above downloaded zipped fasta file
