@@ -40,7 +40,7 @@ https://figshare.com/articles/NR_Viral_TrEMBL/5822166
 Place the file from FigShare the DemoVir directory and execute the script below
 
 ```
-/path_to_demovir/format.sh 
+/path_to_demovir/format_db.sh 
 ```
 
 
