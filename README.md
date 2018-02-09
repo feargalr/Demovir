@@ -1,10 +1,9 @@
 # Demovir
-# -----UNDER CONSTRUCTION----- # 
 Democratic taxonomic classification of viral contigs to Order and Family level
 
 When performing metagenomic sequencing of Viral-Like Particle (VLP) captures the majority of returned sequences often bare little to no homology to reference sequences. Frequently it may be useful to know which viral taxonomic group these novel viruses are likely to belong to as this will give information about nucleic acid type, size and behaviour.
 
-DemoVir will classify viral contigs to the Order or Family taxonomic level by comparing genes on the amino acid level against the viral subset of the TrEMBL database, and then taking a vote of the Order and Family hits. Homology searches are performed by Usearch in order to increase speed.
+DemoVir will classify viral contigs to the Order or Family taxonomic level by comparing genes on the amino acid level against the viral subset of the TrEMBL database, and then taking a vote of the Order and Family hits. Homology searches are performed by Usearch in order to increase speed. This type of method has previously been implemented in multiple published virome studies but none of have performed benchmarking or made it available as a simple executable script easily downloaded and installed.  
 
 DemoVir expects as input a multi fasta file of amino acid sequences where the sequence headers are contigid_geneid, such as in the output produced by prodigal (e.g. NODE_1_length_100_cov_25_1, NODE_1_length_100_cov_25_2, NODE_1_length_100_cov_25_3).
 
@@ -22,6 +21,12 @@ Usearch 32 bit is available for free from
 
 http://www.drive5.com/more.html
 
+DemoVir assumes that all of the above are available in the PATH.
+
+To download from GitHub:
+
+git clone https://github.com/feargalr/Demovir.git
+
 ### DATABASE:
 The viral subset of the TrEMBL database is available from UniProt, but will require some additional formatting for use with DemoVir. In the future we hope to make a method to automate this process.
 
@@ -30,7 +35,7 @@ Alternatively we have a made a version with redundant to 95% identity for increa
 https://figshare.com/articles/NR_Viral_TrEMBL/5822166
 
 
-To format the database for use with DemoVir simply execute the following in the directory where you have placed the above downloaded zipped fasta file
+Place the file from FigShare the DemoVir directory and execute the script below
 
 ```
 /path_to_demovir/format.sh 
