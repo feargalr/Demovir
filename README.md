@@ -51,3 +51,7 @@ DemoVir expects as input a multi fasta file of amino acid sequences where the se
 ```
 
 The output is a tab delimited text file containing 5 columns. The first being the contig ID, the second the Order classification, the third the percentage of the vote this classification got, then the 4th and 5th are the same for Family. Demovir assigns the classification simply by which ever taxa was most prevalant, it does not require a certain threshold to be crossed, or for one taxa to reach a majority (i.e. >50%).
+
+## Benchmarking
+# IN PROGRESS
+
