@@ -32,7 +32,7 @@ git clone https://github.com/feargalr/Demovir.git
 ### DATABASE:
 The viral subset of the TrEMBL database is available from UniProt, but will require some additional formatting for use with DemoVir. In the future we hope to make a method to automate this process.
 
-Alternatively we have a made a version with redundant to 95% identity for increased speed with little to no loss in classificationa availability which is available at:
+Alternatively we have a made a version with redundant to 95% identity for increased speed with little to no loss in classification accuracy which is available at:
 
 https://figshare.com/articles/NR_Viral_TrEMBL/5822166
 
