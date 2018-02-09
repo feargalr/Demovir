@@ -25,7 +25,9 @@ DemoVir assumes that all of the above are available in the PATH.
 
 To download from GitHub:
 
+```
 git clone https://github.com/feargalr/Demovir.git
+```
 
 ### DATABASE:
 The viral subset of the TrEMBL database is available from UniProt, but will require some additional formatting for use with DemoVir. In the future we hope to make a method to automate this process.
