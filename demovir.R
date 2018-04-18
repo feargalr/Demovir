@@ -15,14 +15,7 @@ taxa = readRDS(taxa_file)
 rownames(taxa) = taxa$id
 results2 = data.frame(results,taxa[as.character(results$subject),])
 
-
-###This works but requires a table with the contig ID, gene id and assignments!!!
 results3 = results2
-
-## It seems like the list gets put out of order when it's iterating or something! Beacuse some things 
-#get the wrong assignments in the final list but if I look at them one by one they're grand!
-#
-
 taxassO = c()
 taxassF = c()
 sums_o = c()
