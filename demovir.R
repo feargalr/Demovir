@@ -23,14 +23,14 @@ results3 = results2
 #get the wrong assignments in the final list but if I look at them one by one they're grand!
 #
 
-contig = "PbHybrid_NODE_305_length_6368_cov_3.77728"
-
 taxassO = c()
 taxassF = c()
 sums_o = c()
 sums_f = c()
 margin_f = c()
 margin_o = c()
+options(warn = -1)
+
 for (contig in levels(factor(results3$contig))){
   
   totest = results3[results3$contig==contig,]
@@ -84,6 +84,8 @@ for (contig in levels(factor(results3$contig))){
     
   }
 }
+options(warn = 0)
+
 margin_f = margin_f*100
 margin_o = margin_o*100
 
@@ -91,6 +93,7 @@ taxassO[sums_o<=1] = "Unassigned"
 taxassF[sums_f<=1] = "Unassigned"
 
 towrite = data.frame(levels(results3$contig),taxassO,margin_o,taxassF,margin_f)
+towrite = towrite[!towrite$taxassO == "Unassigned" & towrite$taxassF == "Unassigned",]
 colnames(towrite) = c("Sequence_ID","Order","Percent_of_votes","Family","Percent_of_votes")
 
 write.table(towrite,"DemoVir_assignments.txt",row.names = FALSE,quote=FALSE,sep = "\t")
