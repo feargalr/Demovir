@@ -24,6 +24,10 @@ Usearch 32 bit is available for free from
 
 http://www.drive5.com/more.html
 
+Prodigal is available from
+
+https://github.com/hyattpd/Prodigal
+
 DemoVir assumes that all of the above are available in the PATH.
 
 To download from GitHub:
