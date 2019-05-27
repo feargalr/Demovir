@@ -61,8 +61,3 @@ DemoVir expects as input a multi fasta file of nucleotide sequences such as scaf
 
 The output is a tab delimited text file containing 5 columns. The first being the sequence ID, the second the Order classification, the third the percentage of the vote this classification got, then the 4th and 5th are the same for Family. Demovir assigns the classification simply by which ever taxa was most prevalant, it does not require a certain threshold to be crossed, or for one taxa to reach a majority (i.e. >50%).
 
-## Benchmarking
-
-### IN PROGRESS
-Initial results indicate very high levels of accuracy at order and family levels. Generally if DemoVir is uncertain about a classification it will report it as unclassified.
-
