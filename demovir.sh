@@ -8,7 +8,7 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 prodigal -a AA.fasta -i $1 -p meta &> /dev/null
 echo "Genes predicted"
-usearch -ublast AA.fasta -db $DIR/uniprot_trembl.viral.udb -evalue 1e-5 -blast6out trembl_ublast.viral.txt -threads $2 &> /dev/null
+usearch -ublast AA.fasta -db $DIR/uniprot_trembl.viral.udb -evalue 1e-5 -trunclabels -blast6out trembl_ublast.viral.txt -threads $2 &> /dev/null
 echo "UBLAST complete"
 sort -u -k1,1 trembl_ublast.viral.txt > trembl_ublast.viral.u.txt
 rm AA.fasta 
