@@ -8,6 +8,7 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 prodigal -a AA.fasta -i $1 -p meta &> /dev/null
 echo "Genes predicted"
+echo "Processing ${1##*/} ..."
 usearch -ublast AA.fasta -db $DIR/uniprot_trembl.viral.udb -evalue 1e-5 -trunclabels -blast6out trembl_ublast.viral.txt -threads $2 &> /dev/null
 echo "UBLAST complete"
 sort -u -k1,1 trembl_ublast.viral.txt > trembl_ublast.viral.u.txt
@@ -16,4 +17,5 @@ cut -f 1,2 trembl_ublast.viral.u.txt | sed 's/_[0-9]\+\t/\t/' | cut -f 1 | paste
 rm trembl_ublast.viral.u.txt trembl_ublast.viral.txt
 Rscript $DIR/demovir.R
 rm trembl_ublast.viral.u.contigID.txt
+mv DemoVir_assignments.csv ${1##*/}_DemoVir_assignments.csv
 echo "Done!"

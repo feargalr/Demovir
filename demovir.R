@@ -87,4 +87,4 @@ towrite = data.frame(levels(factor(results3$contig)),taxassO,margin_o,taxassF,ma
 towrite = towrite[!(towrite$taxassO == "Unassigned" & towrite$taxassF == "Unassigned"),]
 colnames(towrite) = c("Sequence_ID","Order","Percent_of_votes","Family","Percent_of_votes")
 
-write.table(towrite,"DemoVir_assignments.txt",row.names = FALSE,quote=FALSE,sep = "\t")
+write.csv(towrite,"DemoVir_assignments.csv",row.names = FALSE,quote=FALSE)
