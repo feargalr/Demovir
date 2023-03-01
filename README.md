@@ -1,7 +1,7 @@
 # Demovir
 Democratic taxonomic classification of viral contigs to Order and Family level
 
-*NOTE: This archive has not been actively maintained since ~2018. Although it should still function it has been archived and made read only*
+*NOTE: This archive has not been actively maintained since ~2018. The database is out of date. This archive is maintained as read only for purpose of reproducibility and code transperancy for projects which cite DemoVir.*
 
 When performing metagenomic sequencing of Viral-Like Particle (VLP), the majority of returned sequences often bare little to no homology to reference sequences - Viral Dark Matter. Frequently it may be useful to know which viral taxonomic group these novel viruses are likely to belong to as this will give information about nucleic acid type, size and behaviour.
 
