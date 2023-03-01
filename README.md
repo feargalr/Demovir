@@ -1,6 +1,8 @@
 # Demovir
 Democratic taxonomic classification of viral contigs to Order and Family level
 
+NOTE: This archive has not been actively maintained since ~2018. Although it should still function it has been archived and made read only
+
 When performing metagenomic sequencing of Viral-Like Particle (VLP), the majority of returned sequences often bare little to no homology to reference sequences - Viral Dark Matter. Frequently it may be useful to know which viral taxonomic group these novel viruses are likely to belong to as this will give information about nucleic acid type, size and behaviour.
 
 DemoVir will classify viral contigs to the Order or Family taxonomic level by comparing genes on the amino acid level against the viral subset of the TrEMBL database, and then taking a vote of the Order and Family hits. Homology searches are performed by Usearch in order to increase speed. This type of method has previously been implemented in multiple published virome studies but to our knowledge none have performed benchmarking or made it available as a simple executable script easily downloaded and installed.
