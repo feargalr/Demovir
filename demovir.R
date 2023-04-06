@@ -79,15 +79,12 @@ for (contig in levels(factor(results3$contig))){
     
   }
 }
-margin_f = margin_f*100
-margin_o = margin_o*100
-
-taxassO[sums_o<=1] = "Unassigned"
-taxassF[sums_f<=1] = "Unassigned"
+taxassO[sums_o>1] = "Unassigned"
+taxassF[sums_f>1] = "Unassigned"
 options(warn = -1)
 
-towrite = data.frame(levels(results3$contig),taxassO,margin_o,taxassF,margin_f)
+towrite = data.frame(levels(factor(results3$contig)),taxassO,margin_o,taxassF,margin_f)
 towrite = towrite[!(towrite$taxassO == "Unassigned" & towrite$taxassF == "Unassigned"),]
 colnames(towrite) = c("Sequence_ID","Order","Percent_of_votes","Family","Percent_of_votes")
 
-write.table(towrite,"DemoVir_assignments.txt",row.names = FALSE,quote=FALSE,sep = "\t")
+write.csv(towrite,"DemoVir_assignments.csv",row.names = FALSE,quote=FALSE)
